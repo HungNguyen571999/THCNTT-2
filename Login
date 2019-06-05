@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<title>Web Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+#back_ground {
+  position: fixed;
+top: 0px;
+
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+overflow: hidden;
+}
+.login{
+	font-size:90px;
+	font-family:arial;
+	color:wheat;
+	position:absolute;
+	top:15%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+
+table {
+  width:60%;
+  position:center;
+  border-collapse: collapse;
+  top:60%;
+  left: 50%;
+  position:absolute;
+  transform: translate(-50%,-50%);
+}
+table, th, td { border: 2px solid black;}
+
+th,td{
+  padding: 20px;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  background-color:rgba(30, 37, 55,.5);}
+.loginbox{
+	width:300px;
+	height: 380px;
+	background-color:rgba(0,0,0);
+	color:#fff;
+	top:300px;
+	left: 50%;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position:absolute;
+	top: -50px;
+	left: calc(30%);
+}
+
+
+h1{text-align:center;}
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.login input{
+	weight: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 35px  ;
+	width: 230px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.loginbox a{
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.loginbox a:hover
+{
+	color: #ffc107;
+}
+</style>
+<body>
+<video id="back_ground" autoplay="true" loop="loop" muted="muted">
+    	<source src="bg1.mp4" type="video/mp4"/>
+    </video>
+
+  <div class="login">
+    <p>Smart Home</p>
+  </div>
+  
+	
+	
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Login Here</button></p>
+    
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+   
+		
+		<div class="loginbox">
+		<span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+		<img src="a.png" class="avatar">
+		<h1>Login Here</h1>
+		<form action="file:///C:/admin.html">
+			
+			<p>Username</p>
+			<input type="text" name="user" placeholder="Enter Username">
+			
+			<p>Password</p>
+			<input type="password" name="123" placeholder="Enter Password"><br>
+			
+			<input type="submit" name="" value="Login"> <br>
+			<a href="#">Lost your password ?</a><br>
+			<a href="#">Don't have an account ?</a>
+			
+		</form>
+	</div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<!--<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Login Here</h1>
+    </div>
+    <div class="w3-container">
+      <p>Xin chào, yêu cầu của bạn là gì hãy gửi cho chúng tôi tin nhắn:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Enter Username" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Enter Password" required name="People"></p>
+        
+        <p><button class="w3-button" type="submit">Login</button></p>
+      </form>
+    </div>
+  </div>
+</div>-->
+
+</body>
+</html>
+
