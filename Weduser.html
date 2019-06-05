@@ -1,0 +1,148 @@
+# THCNTT-2
+Project WEB
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Web User</title>
+	<link rel="stylesheet" type="text/css" href="webuserstyle.css">
+</head>
+<body>
+	<header>
+	
+		<img src="hs.png" class="avatar">
+		<h2>Web User</h2>
+		<h6>Hi! Admin | <a href="file:///C:/login.html">Đăng Xuất</a></h6>
+	</header>
+	<section>
+		<nav>
+			<div class="logo-user">
+				<img src="family.png" width="80px" class="logo-user-radius">
+			</div>
+			<div class="nd">
+				<div class="paragraph-line-first">
+				<h3>Họ Tên Chủ Hộ:</h3>
+				 <h3>Nguyễn Mạnh Hùng</h3>
+				</div>
+				<div class="paragraph-line">
+				<h3>Phòng: 110</h3>
+				</div>
+				<div class="paragraph-line">
+				<h3>Số lượng cảm biến: 1</h3>
+				</div>
+				<div class="paragraph-line">
+				<h3>Số lượng thiết bị: 3</h3>
+				</div>
+				<div class="paragraph-line">
+				<h3>Danh sách thiết bị: </h3>
+				
+					- Đèn<br>
+					- Camera anh ninh<br>
+					- Máy lạnh
+				</div>
+			</div>
+		</nav>
+  
+		<article>
+			
+			<div id="time"></div>
+			<script>
+				
+				
+				function dongho(){
+					var time=new Date();
+					var ngay=["CN","T2","T3","T4","T5","T6","T7"];
+					var thang=["1","2","3","4","5","6","7","8","9","10","11","12"];
+					
+					var gio=time.getHours();
+					var phut=time.getMinutes();
+					var giay=time.getSeconds();
+					if (gio<10)
+						gio="0"+gio;
+					if (phut<10)
+						phut="0"+phut;
+					if (giay<10)
+						giay="0"+giay;
+					
+					document.getElementById("time").innerHTML =  "Hôm nay,"+ngay[time.getDay()]+" ngày "+time.getDate()+" tháng "+thang[time.getMonth()]+" năm "+time.getFullYear() +" lúc " +gio + ":" + phut + ":" + giay;
+					setTimeout("dongho()",1000);
+				}
+				dongho();
+			</script>
+			<div id="box">
+				<div class="loginbox">
+					<p>Nhiệt Độ Bên Ngoài <img src="sun.png" width="45px" height="45px" class="icon"></p>
+					<h4>28℃ -- xx℉</h4>
+					<h5> sai số: ± x ℃ </h5>
+				</div>
+				
+				
+				<div class="loginbox1">
+					<p>Độ Sáng Bên Ngoài <img src="house.png" width="45px" height="45px" class="icon"></p>
+					<h4>30℃ -- xx℉</h4>
+					<h5> sai số: ± x ℃ </h5>
+				</div>
+				
+				
+				<div class="loginbox2">
+					<p>Nhiệt Độ Trong Nhà <img src="hot.png" width="45px" height="45px" class="icon"></p>
+					<h4>28℃  -  xx℉</h4>
+					<h5> sai số: ± x ℃ </h5>
+				</div>
+				
+				
+				<div class="loginbox3">
+					<p>Độ Sáng Trong Nhà  <img src="sparkles.png" width="45px" height="45px" class="icon"></p>
+					<h4>28℃  -  xx℉</h4>
+					<h5> sai số: ± x ℃ </h5>
+				</div>
+				
+				
+				<div class="loginbox4">
+					<p>Độ Ẩm Bên Ngoài <img src="storm.png" width="45px" height="45px" class="icon"></p>
+					<h4>28℃  -  xx℉</h4>
+					<h5> sai số: ± x ℃ </h5>
+				</div>
+				
+				
+				<div class="loginbox5">
+					<p>Độ Ẩm Trong Nhà  <img src="cloud.png" width="45px" height="45px" class="icon"></p>
+					<h4>28℃  -  xx℉</h4>
+					<h5> sai số: ± x ℃ </h5>
+				</div>
+				
+				<div class="loginbox6">
+					<div class="position">
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round">
+						</span>
+					</label>
+					</div>
+					<img src="saving.png" width="35px" height="35px" class="icon1"> <p>Đèn Phòng Khách</p>
+				</div>
+				
+				<div class="loginbox7">
+					<div class="position">
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round">
+						</span>
+					</label>
+					</div>
+					<img src="saving.png" width="35px" height="35px" class="icon1"> <p>Đèn Phòng Ngủ</p>
+				</div>
+			</div>
+			
+		</article>
+		<footer>
+		<p>Vui lòng liên hệ với chúng tôi qua các thông tin sau</p>
+		<p>Địa chỉ:Trung tâm phần mềm Quang Trung, Quận 12, TP.Hồ Chí Minh</p>
+		<p>Số Điện Thoại Cty: 090xxxxxxxx</p>
+		<p>Email:CtyIOT@gmail.com</p>
+	</footer>
+	</section>
+	
+</body>
+</html>
