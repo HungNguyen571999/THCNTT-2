@@ -150,6 +150,7 @@ h5{
 	position:absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
+	border-radius:30px;
 }
 .loginbox1{
 	background:#37404a;
@@ -162,6 +163,7 @@ h5{
 	position:absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
+	border-radius:30px;
 }
 
 .loginbox2{
@@ -175,6 +177,7 @@ h5{
 	position:absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
+	border-radius:30px;
 }
 .loginbox3{
 	background:#37404a;
@@ -187,6 +190,7 @@ h5{
 	position:absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
+	border-radius:30px;
 }
 
 .loginbox4{
@@ -200,6 +204,7 @@ h5{
 	position:absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
+	border-radius:30px;
 }
 
 .loginbox5{
@@ -213,13 +218,14 @@ h5{
 	position:absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
+	border-radius:30px;
 }
 .icon1{
 	float:left;
 }
 .loginbox6{
 	background:#37404a;
-	width: 1000px;
+	width: 840px;
 	height:50px;
 	padding: 0px 20px;
 	margin: 0px;
@@ -228,11 +234,12 @@ h5{
 	position:absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
+	border-radius:30px;
 }
 
 .loginbox7{
 	background:#37404a;
-	width: 1000px;
+	width: 840px;
 	height:50px;
 	padding: 0px 20px;
 	margin: 0px;
@@ -241,6 +248,7 @@ h5{
 	position:absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
+	border-radius:30px;
 }
 .position{
 	margin-top:5px;
